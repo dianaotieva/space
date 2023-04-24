@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crewA.css">
+    <script src="crewA.js" defer></script>
+    <title>CrewA</title>
+</head>
+<body>
+    <div class="container">
+        <div class="topnav">
+            <img class="logo" src="./pictures/logo.png"/>
+            <div id="mySidenav" class="sidenav"> 
+                <button class="closebtn" aria-label="Close alert" type="button" data-close>
+                    <span style="font-size:50px; cursor:pointer" aria-hidden="true" onclick="closeNav()" class="close">&times;</span>
+            </button> 
+                <a href="index.html" class="active">00 HOME</a>
+                <a href="destination.html">01 DESTINATION</a>
+                <a href="crewA.html">02 CREW</a>
+                <a href="technology.html"> 03 TECHNOLOGY</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer; color:#FFFFFF" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <div class="tabNav">
+        <img class="logo" src="logo.png"/>
+        <hr class="topLine">
+        <div class="navbar">
+          
+          <a href="index.html" class="active">HOME</a>
+          <a href="destination.html">DESTINATION</a>
+          <a href="crewA.html">CREW</a>
+          <a href="technology.html">TECHNOLOGY</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-header">
+        <h2 class="title">
+            <span style="color: #FFFFFF;
+                mix-blend-mode: normal;
+                opacity: 0.25;">02</span>
+            Meet your crew </h2>       
+        </div>
+<div class="crew-content">
+    <div class="crew" >
+    <img class="img active" id="image" src="./pictdouglas.png" alt="douglas" />
+    <hr class="bottomLine">
+    <div class="slider-navigation">
+       <div class="nav-btn active" id="btn1" onclick=crewA() ></div>
+       <div class="nav-btn" id="btn2" onclick=crewB()></div>
+       <div class="nav-btn" id="btn3" onclick=crewC()></div>
+       <div class="nav-btn" id="btn4" onclick=crewD()></div>
+    </div>
+    <div class="texts">
+    <h2 class="level1" id="level">Commander</h2>
+    <h1 class="name1" id="name">Douglas Hurley</h1>
+    
+    <p class="desc1" id="description">
+        Douglas Gerald Hurley is an American engineer,
+        former Marine Corps pilot and former NASA astronaut.
+        He launched into space for the third time as commander, 
+        of Crew Dragon Demo-2.
+    </p>
+</div> 
+    </div>
+    <img class="img active" id="imgTab" src="image-tab.png" alt="douglas" />
+</div>
+      </div>
+        </div>
+</body>
+</html>

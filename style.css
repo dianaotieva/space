@@ -1,0 +1,335 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bellefair', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+
+.container {
+  background: url(background.jpg) no-repeat;
+  background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+.logo{
+    width: 40px;
+    height: 40px;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.tabNav{ display: none;}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidenav {
+  backdrop-filter: blur(40.7742px);
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.sidenav a {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  padding-top:32px;
+  text-decoration: none;
+  display: block;
+  color: #FFFFFF;
+  transition: all 0.5s ease-out;
+}
+
+.sidenav a:hover, a:focus {
+  margin-bottom: 15px;
+  background-color: #fff;
+  color: #333;
+}
+
+.sidenav .closebtn{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.open{
+  color:#FFFFFF;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.close{
+  color: white;
+  position: fixed;
+  right: 10px;
+  top: 15px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texts{
+    
+    margin-top: 48px;
+    gap: 16px;
+}
+
+.title1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.7px;
+
+    color: #D0D6F9;
+}
+
+.title2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.description{
+    font-family: 'Barlow Condensed', sans-serif;
+    height: 125px;
+    width: 327px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    
+    color: #D0D6F9;
+}
+
+.oval-button{
+
+
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: none;
+    background: #FFFFFF;  
+}
+
+a{
+
+  font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    cursor: pointer;
+    
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-decoration: none;
+    
+    color: #0B0D17;
+}
+
+hr{
+  display: none;
+}
+
+@media (min-width: 768px){
+  .container{
+    background: url(indexTab.jpg) no-repeat;
+    background-position: center;
+    background-size: 768px 1024px;
+  }
+
+  .logo{
+    margin-right: 14px;
+  }
+  .topnav{
+    display: none;
+  }
+
+  .tabNav{
+    display: flex;
+    flex-direction: row;
+    gap: 231px;
+  }
+
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+    width: 450px;
+    height: 96px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+  }
+
+  .navbar a{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    color: #FFFFFF;
+  }
+
+  .texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 106px;
+    gap: 36px;
+  }
+
+  .title1{
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+
+  .title2{
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  .description{
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .oval-button{
+    width: 242px;
+    height: 242px;
+  }
+
+  .oval-button a{
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+
+  hr{
+    display: none;
+  }
+
+}
+
+@media ( min-width: 1440px){
+  .container{
+    background: url(desctopepic.jpg) no-repeat;
+  }
+
+  .logo{
+    width: 48px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 55px;
+  }
+
+  .tabNav{
+    position: relative;
+
+  }
+  .navbar{
+    height: 96px;
+    width: 830px;
+    margin-top: 40px;
+    margin-left: 262px;
+  }
+
+  hr{
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 473px;
+    left: 167px;
+    top: 88px;
+    opacity: 0.17;
+    
+  }
+
+  .navbar a{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    gap: 391.5px;
+  }
+
+  .texts{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title1{
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+  }
+
+  .title2{
+    font-size: 150px;
+    line-height: 172px;
+  }
+
+  .description{
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .oval-button{
+    width: 274px;
+    height: 274px;
+    margin-top: 200px;
+  }
+
+}
+
+
