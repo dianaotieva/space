@@ -10,9 +10,9 @@ function closeNav() {
 
   function crewA(){
     document.getElementById('image')
-    .src="douglas.png";
+    .src="./pics/douglas.png";
     document.getElementById('imgTab')
-    .src="image-tab.png";
+    .src="./pics/image-tab.png";
     document.getElementById('level')
     .innerHTML="Commander";
     document.getElementById('name')
@@ -23,9 +23,9 @@ function closeNav() {
 
 function crewB(){
   document.getElementById('image')
-  .src="mark.png";
+  .src="./pics/mark.png";
   document.getElementById('imgTab')
-  .src="mark-tab.png";
+  .src="./pics/mark-tab.png";
   document.getElementById('level')
   .innerHTML="Mission Specialist";
   document.getElementById('name')
@@ -37,9 +37,9 @@ function crewB(){
 
 function crewC(){
   document.getElementById('image')
-  .src="victor.png";
+  .src="./pics/victor.png";
   document.getElementById('imgTab')
-  .src="victor-tab.png";
+  .src="./pics/victor-tab.png";
   document.getElementById('level')
   .innerHTML="Pilot";
   document.getElementById('name')
@@ -50,9 +50,9 @@ function crewC(){
 
 function crewD(){
   document.getElementById('image')
-  .src="anoushan.png";
+  .src="./pics/anoushan.png";
   document.getElementById('imgTab')
-  .src="anoushan-tab.png";
+  .src="./pics/anoushan-tab.png";
   document.getElementById('level')
   .innerHTML="Flight Engineer";
   document.getElementById('name')

@@ -8,7 +8,7 @@ function closeNav() {
 
   function techA() {
     document.querySelector(".img")
-    .src="shattle.png";
+    .src="./pics/shattle.png";
     document.querySelector(".title-main")
     .innerHTML="LAUNCH VEHICLE"
     document.querySelector(".description")
@@ -17,7 +17,7 @@ function closeNav() {
 
   function techB() {
     document.querySelector(".img")
-    .src="spaceport.png";
+    .src="./pics/spaceport.png";
     document.querySelector(".title-main")
     .innerHTML="SPACEPORT"
     document.querySelector(".description")
@@ -26,7 +26,7 @@ function closeNav() {
 
   function techC() {
     document.querySelector(".img")
-    .src="capsule.png";
+    .src="./pics/capsule.png";
     document.querySelector(".title-main")
     .innerHTML="SPACE CAPSULE"
     document.querySelector(".description")

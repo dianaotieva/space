@@ -20,7 +20,7 @@ body{
 }
 
 .container {
-  background: url(background.jpg) no-repeat;
+  background: url(../pics/background.jpg) no-repeat;
   background-position: center;
     width: 100%;
     height: 100%;
@@ -175,7 +175,7 @@ hr{
 
 @media (min-width: 768px){
   .container{
-    background: url(indexTab.jpg) no-repeat;
+    background: url(../pics/indexTab.jpg) no-repeat;
     background-position: center;
     background-size: 768px 1024px;
   }
@@ -258,7 +258,7 @@ hr{
 
 @media ( min-width: 1440px){
   .container{
-    background: url(desctopepic.jpg) no-repeat;
+    background: url(../pics/desctopepic.jpg) no-repeat;
   }
 
   .logo{

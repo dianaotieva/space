@@ -8,7 +8,7 @@ function closeNav() {
 
   function moon() {
     document.querySelector(".moon-img")
-    .src="moon.png";
+    .src="./pics/moon.png";
     document.getElementById("title-text")
     .innerHTML="MOON";
     document.getElementById("desc")
@@ -21,7 +21,7 @@ function closeNav() {
 
   function mars() {
     document.querySelector(".moon-img")
-    .src="mars.png";
+    .src="./pics/mars.png";
     document.getElementById("title-text")
     .innerHTML="MARS";
     document.getElementById("desc")
@@ -34,7 +34,7 @@ function closeNav() {
 
   function europa() {
     document.querySelector(".moon-img")
-    .src="europa.png";
+    .src="./pics/europa.png";
     document.getElementById("title-text")
     .innerHTML="EUROPA";
     document.getElementById("desc")
@@ -47,7 +47,7 @@ function closeNav() {
 
   function Titan() {
     document.querySelector(".moon-img")
-    .src="titan.png";
+    .src="./pics/titan.png";
     document.getElementById("title-text")
     .innerHTML="TITAN";
     document.getElementById("desc")
