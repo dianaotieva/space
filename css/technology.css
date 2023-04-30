@@ -28,6 +28,8 @@ body{
 .logo{
     width: 40px;
     height: 40px;
+    margin-top: 20px;
+    margin-left: 19px;
    
 }
 
@@ -37,7 +39,7 @@ body{
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 24px 30px;
+  padding: 19px 30px;
 }
 .tabNav{
   display: none;
@@ -80,8 +82,8 @@ body{
 .sidenav .closebtn{
     display: block;
     position: absolute;
-    /* right: 0;
-    top: 0; */
+    right: 0;
+    top: 0;
 }
 
 
@@ -144,7 +146,7 @@ body{
     cursor: pointer;
 }
 
-.btns .nav-btn a{
+.nav-btn a{
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
@@ -155,7 +157,7 @@ body{
     color: white;
 }
 
-.btns .nav-btn a:hover{
+.nav-btn a:hover{
     color: black;
 }
 .texts{

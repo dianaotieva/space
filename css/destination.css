@@ -29,15 +29,17 @@ background-position: center;
 .logo{
   width: 40px;
   height: 40px;
+  margin-top: 20px;
+  margin-left: 19px;
 }
 
 .topnav {
-display: block;
 overflow: hidden;
 position: relative;
 display: flex;
+flex-direction: row;
 justify-content: space-between;
-margin: 24px 30px;
+padding: 19px 30px;
 }
 
 .moon-img{
@@ -59,7 +61,6 @@ padding-top: 60px;
 height: 100%;
 width: 0;
 position: fixed;
-gap: 15px;
 z-index: 1;
 top: 0;
 left: 0;
@@ -89,8 +90,8 @@ left: 0;
 .sidenav .closebtn{
     display: block;
     position: absolute;
-    /* right: 0;
-    top: 0; */
+    right: 0;
+    top: 0;
 }
 
 
@@ -101,8 +102,8 @@ left: 0;
 }
 
 .close{
-  color: white;
   position: fixed;
+  color: white;
   right: 10px;
   top: 15px;
 }
@@ -115,7 +116,7 @@ left: 0;
     margin: 24px;
 }
 
-.content .title{
+ .title{
     font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
@@ -127,7 +128,7 @@ left: 0;
     color: #FFFFFF;
 }
 
-.content .title .moon-img{
+ .moon-img{
     margin-top: 32px;
     width: 170px;
     height: 170px;
@@ -144,7 +145,7 @@ left: 0;
 }
 
 
-  .slider-navigation  .nav-btn{
+  .nav-btn{
   font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 400;
@@ -159,13 +160,13 @@ left: 0;
  }
 
 
- .content .texts-nav{
+ .texts-nav{
   display: flex;
   flex-direction: column;
   align-items: center;
  }
 
- .content .texts-nav .title-moon{
+ .title-moon{
   margin-top: 32px;
   font-family: 'Bellefair';
   font-style: normal;
@@ -177,9 +178,7 @@ left: 0;
   color: #FFFFFF;
  }
 
- .content .texts-nav  .description{
-  /* height: 125px;
-  width: 327px; */
+ .description{
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 400;
@@ -198,7 +197,7 @@ left: 0;
   opacity: 0.17;
  }
 
- .texts .avg{
+ .avg{
   margin-top: 32px;
   font-family: 'Barlow Condensed';
   font-style: normal;
@@ -210,7 +209,7 @@ left: 0;
   color: #D0D6F9;
  }
   
- .texts .num{
+ .num{
   margin-top: 12px;
   font-family: 'Bellefair';
   font-style: normal;
@@ -224,7 +223,7 @@ left: 0;
   color: #FFFFFF;
  }
 
- .texts .travel-time{
+ .travel-time{
   margin-top: 32px;
   font-family: 'Barlow Condensed';
   font-style: normal;
@@ -238,7 +237,7 @@ left: 0;
   color: #D0D6F9;
  }
 
- .texts .time-num{
+.time-num{
   margin-top: 12px;
   font-family: 'Bellefair';
   font-style: normal;
