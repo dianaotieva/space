@@ -113,6 +113,7 @@ left: 0;
 
 
  .title{
+    text-align: center;
     font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
@@ -123,7 +124,7 @@ left: 0;
     
     color: #FFFFFF;
 }
-.crew-content .crew{
+ .crew{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -334,41 +335,29 @@ img {
 
   .content{
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
-    padding: 0;
-  }
-
-
-  .crew-content{
-    display: flex;
-    flex-direction: row;
-  }
-  .crew{
-    position: relative;
-  }
-
-  .content-header{
-    margin: 0;
-    padding: 0;
 
     
   }
+
+  
+ 
   .title{
+    text-align: start;
     font-size: 28px;
     line-height: 34px;
     letter-spacing: 4.725px;
-    padding-right: 220px;
+    padding-left: 135px;
 
-    margin-top: 76px;
     
     
   }
 
   .texts{
-    position: absolute;
-    top: 200px;
-    right: 40px;
+    position: relative;
+   display: flex;
+   flex-direction: column;
+   padding-left: 165px;
   }
 
 
@@ -376,27 +365,29 @@ img {
     font-size: 32px;
     line-height: 37px;
     text-align: inherit;
-    padding-left: 10px;
+    
   }
 
   .name1{
-    font-size: 56px;
+    font-size: 50px;
     line-height: 64px;
     text-align: inherit;
-    padding-left: 10px;
+    
   }
 
   .desc1{
     font-size: 18px;
     line-height: 32px;
-    margin-left: 20px;
+    
     width: 444px;
     height: 128px;
   }
 
+
    #imgTab{
-    margin-top: 170px;
-    margin-left: 70px;
+    position: absolute;
+    left: 700px;
+    top: 60px;
    }
 
    .slider-navigation{
