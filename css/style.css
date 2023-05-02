@@ -27,27 +27,38 @@ body{
   }
 
 .logo{
-    width: 50px;
-    height: 50px;
-    margin-top: 20px;
-    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    
 }
 
 .tabNav{ display: none;}
 
-.topnav {
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 20px;
+
+ul li {
+  height: inherit;
+  display: inline-block;
+}
+
+ul li:first-child {
+  margin-left: 24px;
+}
+
+ul li:not(:last-child){
+  padding-top: 24px;
+}
+
+ul li:last-child {
+  justify-content: flex-end;
+  margin-right: 24px;
+  margin-top: 24px;
+  float: right;
 }
 
 .sidenav {
   backdrop-filter: blur(40.7742px);
   overflow: hidden;
   transition: 0.5s;
-  padding-top: 60px;
   height: 100%;
   width: 0;
   position: fixed;
@@ -64,9 +75,7 @@ body{
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 2.7px;
-  padding-top:32px;
   text-decoration: none;
-  display: block;
   color: #FFFFFF;
   transition: all 0.5s ease-out;
 }
@@ -86,9 +95,9 @@ body{
 }
 
 .open{
+  text-align: end;
   color:#FFFFFF;
-  margin-top: 10px;
-  margin-left: 20px;
+  
 }
 
 .close{
@@ -105,9 +114,8 @@ body{
 }
 
 .texts{
-    
+    align-items: center;
     margin-top: 48px;
-    gap: 16px;
 }
 
 .title1{
@@ -127,7 +135,7 @@ body{
     font-weight: 400;
     font-size: 80px;
     line-height: 100px;
-
+    padding-top: 16px;
     text-align: center;
 
     color: #FFFFFF;
@@ -140,15 +148,14 @@ body{
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 25px;
-    text-align: justify;
-    
+    line-height: 30px;
+    text-align: center;
+    padding-top: 16px;
     color: #D0D6F9;
 }
 
 .oval-button{
-
-
+   margin-top: 81px;
     border-radius: 50%;
     height: 150px;
     width: 150px;
@@ -184,7 +191,8 @@ hr{
   }
 
   .logo{
-    margin-right: 14px;
+    margin-left: 39px;
+    margin-top: 24px;
   }
   .topnav{
     display: none;
@@ -193,7 +201,7 @@ hr{
   .tabNav{
     display: flex;
     flex-direction: row;
-    gap: 231px;
+    gap: 270px;
   }
 
   .navbar{
@@ -238,6 +246,10 @@ hr{
   }
 
   .description{
+    text-align: justify;
+    text-indent: 30px;
+    height: 112px;
+    width: 444px;
     font-size: 16px;
     line-height: 28px;
   }
@@ -323,6 +335,8 @@ hr{
   }
 
   .description{
+    text-align: justify;
+    text-indent: 0%;
     font-size: 18px;
     line-height: 32px;
   }
@@ -330,7 +344,7 @@ hr{
   .oval-button{
     width: 274px;
     height: 274px;
-    margin-top: 200px;
+    align-self: flex-end;
   }
 
 }
