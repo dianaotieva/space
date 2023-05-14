@@ -121,7 +121,6 @@ nav ul li a:hover:after{
 .texts{
   display: flex;
   flex-direction: column;
-  /* padding-left: 78px; */
   gap: 24px;
 }
 
@@ -213,15 +212,12 @@ nav ul li a:hover:after{
 
  .content{
   flex-direction: column;
-  /* margin: 0; */
-  /* padding-top: 15%; */
   margin-top: 106px;
   gap: 156px;
  }
 
  .texts{
   align-items: center;
-  /* padding-left: 0; */
  }
 
  .title1{
