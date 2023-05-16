@@ -43,7 +43,8 @@
   margin: 30px 0;
 }
 
-hr{
+hr.line-main{
+  display: block;
   position: absolute;
   height: 1px;
   width: 473px;
@@ -119,6 +120,7 @@ nav ul li a:hover:after{
 }
 
 .texts{
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -183,6 +185,182 @@ nav ul li a:hover:after{
     
     color: #0B0D17;
  }
+/* ////////////////////////////////////
+
+ */
+ /* Destination CSS */
+
+ .container-destination{
+  background: url('../pics/destinDesktop.jpg') no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-left: 6%;
+  padding-top: 3%;
+  box-sizing: border-box;
+  overflow: hidden;
+ }
+
+ .content-destination{
+  display: flex;
+  flex-direction: column;
+  margin-top: 74px;
+}
+
+.title h2{
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  padding-left: 75px;
+  color: #FFFFFF;
+}
+.content-after-title{
+  display: flex;
+  flex-direction: row;
+  padding-left: 127px;
+  gap: 157px;
+  padding-top: 64px;
+}
+
+ .moon-img img{
+    margin-top: 32px;
+    width: 445px;
+    height: 445px;
+}
+
+
+ .slider-navigation {
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+
+ .slider-navigation ul  {
+  display: flex;
+  gap: 35px;
+ }
+
+
+ .slider-navigation ul li{
+  list-style: none;
+  display: inline-block;
+
+ }
+
+  .slider-navigation ul li a{
+    text-decoration: none;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+    cursor: pointer;
+ }
+
+ .slider-navigation ul li a:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.slider-navigation ul li a:hover:after{
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+ .title-moon{
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  color: #FFFFFF;
+ }
+
+
+ .avg{
+  margin-top: 32px;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* text-align: center; */
+  letter-spacing: 2.3625px;
+  color: #D0D6F9;
+ }
+  
+ .num{
+  margin-top: 12px;
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  
+  /* text-align: center; */
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+ }
+
+ .travel-time{
+  margin-top: 32px;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* text-align: center; */
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  
+  color: #D0D6F9;
+ }
+
+.time-num{
+  margin-top: 12px;
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+
+  /* text-align: center; */
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+ }
+
+ .bottom{
+  display: flex;
+  gap: 79px;
+ }
+
+ hr.bottomLine{
+  /* position: absolute; */
+  top: 363px;
+  width: 327px;
+  height: 1px;
+  opacity: 0.17px;
+ }
+ 
 
  @media only screen and (max-width: 900px){
 
@@ -194,7 +372,7 @@ nav ul li a:hover:after{
     justify-content: center;
   }
 
-  hr{
+  #line-main{
     display: none;
   }
 
@@ -206,9 +384,6 @@ nav ul li a:hover:after{
 
   }
 
-  span{
-    display: none;
-  }
 
  .content{
   flex-direction: column;
@@ -278,7 +453,7 @@ nav ul li a:hover:after{
     margin-left: 5px;
   }
 
-  hr{
+  #line-main{
     display: none;
   }
 

@@ -5,40 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/technology.js"></script>
-    <link rel="stylesheet" href="./css/technology.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Technology</title>
 </head>
 <body>
     <div class="container">
-        <div class="topnav">
-            <img class="logo" src="./pics/logo.png"/>
-            <div id="mySidenav" class="sidenav"> 
-                <button class="closebtn" aria-label="Close alert" type="button" data-close>
-                    <span style="font-size:30px; cursor:pointer"
-                    aria-hidden="true" onclick="closeNav()" class="close">&times;</span>
-            </button> 
-                <a href="index.html" class="active">00 HOME</a>
-                <a href="destination.html">01 DESTINATION</a>
-                <a href="crewA.html">02 CREW</a>
-                <a href="technology.html"> 03 TECHNOLOGY</a>
-              </div>
-      
-              <span style="font-size:50px; cursor:pointer; color:#FFFFFF" onclick="openNav()">&#9776;</span>
-    </div>
-
-    <div class="tabNav">
-        <img class="logo" src="./pics/logo.png"/>
-        <hr class="topLine">
-        <div class="navbar">
-          
-          <a href="index.html" class="active">HOME</a>
-          <a href="destination.html">DESTINATION</a>
-          <a href="crewA.html">CREW</a>
-          <a href="technology.html">TECHNOLOGY</a>
-        </div>
-    </div>
-
+        <div class= "navbar">
+            <img src="pics/logo.png" class="logo">
+              <hr class="line-main">
+                <nav>
+                    <ul id="menuList">
+                       <li><a href="index.html" class="active"><span>00</span> HOME</a></li>
+                        <li><a href="destination.html"><span>01</span> DESTINATION</a></li>
+                        <li><a href="crewA.html"><span>02</span> CREW</a></li>
+                        <li><a href="technology.html"><span>03</span>TECHNOLOGY</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
     
+            <div class="navbar-mob">
+                <img src="pics/logo.png" class="logo">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="open">&#9776;</span>
+                <div id="mySidenav" class="sidenav" style="width: 0px;">
+                <a href="javascript:void(0)" style="font-size:50px;cursor:pointer" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html" class="active">00 HOME</a>
+                    <a href="destination.html">01 DESTINATION</a>
+                    <a href="crewA.html">02 CREW</a>
+                    <a href="technology.html"> 03 TECHNOLOGY</a>
+    
+                </div>
+            </div>
 
     <div class="content">
         <h2 class="title">
