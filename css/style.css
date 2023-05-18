@@ -176,7 +176,7 @@ nav ul li a:hover:after{
   font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 32px;
     line-height: 23px;
     cursor: pointer;
     
@@ -284,6 +284,10 @@ nav ul li a:hover:after{
   
 }
 
+.texts-destination{
+  padding-left: 81px;
+}
+
  .title-moon{
   font-family: 'Bellefair';
   font-style: normal;
@@ -301,7 +305,6 @@ nav ul li a:hover:after{
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  /* text-align: center; */
   letter-spacing: 2.3625px;
   color: #D0D6F9;
  }
@@ -313,8 +316,6 @@ nav ul li a:hover:after{
   font-weight: 400;
   font-size: 28px;
   line-height: 32px;
-  
-  /* text-align: center; */
   text-transform: uppercase;
   
   color: #FFFFFF;
@@ -327,7 +328,6 @@ nav ul li a:hover:after{
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  /* text-align: center; */
   letter-spacing: 2.3625px;
   text-transform: uppercase;
   
@@ -341,8 +341,6 @@ nav ul li a:hover:after{
   font-weight: 400;
   font-size: 28px;
   line-height: 32px;
-
-  /* text-align: center; */
   text-transform: uppercase;
   
   color: #FFFFFF;
@@ -405,6 +403,7 @@ nav ul li a:hover:after{
  }
 
  .crew-slider{
+  /* position: sticky; */
   z-index: 888;
   display: flex;
   justify-content: center;
@@ -413,22 +412,22 @@ nav ul li a:hover:after{
   position: absolute;
 }
 
- .nav-btn{
+ .crew-slider .nav-btn{
   width: 15px;
   height: 15px;
-  background: #ffffff;
-  opacity: 0.17px;
+  background: #9a9696;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
   transition: 0.3s ease;
 }
 
-.nav-btn:not(:last-child){
+.crew-slider .nav-btn:not(:last-child){
   margin-right: 20px;
 }
-.nav-btn:hover{
+.crew-slider .nav-btn:hover{
   transform: scale(1.2);
+  background-color: #fff;
 }
 
 /* //////////////////////////////// */
@@ -451,7 +450,7 @@ nav ul li a:hover:after{
   gap: 32px;
   padding-top: 80px;
 }
-.nav-btn{
+.btns .nav-btn{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -465,7 +464,7 @@ nav ul li a:hover:after{
   cursor: pointer;
 }
 
-.nav-btn a{
+.btns .nav-btn a{
   font-family: 'Bellefair';
   font-style: normal;
   font-weight: 400;
@@ -474,10 +473,16 @@ nav ul li a:hover:after{
   text-align: center;
   letter-spacing: 2px;
   
-  color: #fff;
+  color: #8a7f7f;
 }
 
-
+.btns .nav-btn:not(:last-child){
+  margin-right: 20px;
+}
+ .btns .nav-btn:hover{
+  transform: scale(1.2);
+  background-color: #fff;
+ }
 
 .title-name{
   font-family: 'Barlow Condensed';
@@ -521,7 +526,9 @@ nav ul li a:hover:after{
     gap: 231px;
 
   }
-
+ nav ul li span{
+  display: none;
+ }
 
  .content{
   flex-direction: column;
@@ -564,7 +571,58 @@ nav ul li a:hover:after{
   letter-spacing: 2px;
  }
 
+ /* ////////////////////// */
+ /* Destination */
+ .container-destination{
+  background: url(../pics/crewtab.jpg) no-repeat;
+  padding-top: 0;
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: center;
+ }
 
+.content-destination{
+  margin-top: 40px;
+}
+
+.content-after-title{
+  flex-direction: column;
+  gap: 53px;
+  padding-left: 0;
+  
+}
+
+.title h2{
+  padding-left: 0;
+  font-size: 20px;
+  line-height: 24px;
+}
+.moon-img-container{
+  justify-content: center;
+  align-self: center;
+}
+.moon-img{
+  width: 300px;
+  height: 300px;
+}
+
+/* ////////////////// */
+/* Crew */
+.container-crew{
+  background: url(../pics/crewpic.png) no-repeat;
+  padding-top: 0;
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-after-title{
+  display: flex;
+ align-items: center;
+}
+.level{
+  text-align: center;
+}
  }
 
  @media only screen and (max-width: 400px){
