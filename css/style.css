@@ -94,8 +94,8 @@ nav ul li a:after{
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
+  height: 4px;
+  bottom: -10px;
   left: 0;
   background-color: white;
   transform-origin: bottom right;
@@ -125,6 +125,7 @@ nav ul li a:hover:after{
   flex-direction: column;
   gap: 24px;
 }
+
 
 .title1{
   font-family: 'Barlow Condensed', sans-serif;
@@ -222,12 +223,11 @@ nav ul li a:hover:after{
 .content-after-title{
   display: flex;
   flex-direction: row;
-  padding-left: 127px;
+  padding-left: 64px;
   gap: 157px;
-  padding-top: 64px;
 }
 
- .moon-img img{
+ .moon-img{
     margin-top: 32px;
     width: 445px;
     height: 445px;
@@ -267,21 +267,21 @@ nav ul li a:hover:after{
  }
 
  .slider-navigation ul li a:after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  float: right;
+  display: block;
+  color: rgb(6, 6, 6);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 4px;
 }
 
-.slider-navigation ul li a:hover:after{
-  transform: scaleX(0);
+.slider-navigation ul li a:hover{
+  border-bottom: 3px solid rgb(254, 252, 252);
   transform-origin: bottom left;
+  margin-top: 10px;
+  
 }
 
  .title-moon{
@@ -354,13 +354,151 @@ nav ul li a:hover:after{
  }
 
  hr.bottomLine{
-  /* position: absolute; */
   top: 363px;
   width: 327px;
   height: 1px;
   opacity: 0.17px;
  }
+/* ////////////////////////////////////////// */
+/* Crew CSS */
+
+.container-crew{
+  background: url('../pics/crewDesk.png') no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-left: 6%;
+  padding-top: 3%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+ .level{
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  
+  mix-blend-mode: normal;
+  opacity: 0.5;
+ }
+
+ .name{
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+ }
  
+ .image{
+  max-width: 568.07px;
+  max-height: 712px;
+ }
+
+ .crew-slider{
+  z-index: 888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(80px);
+  position: absolute;
+}
+
+ .nav-btn{
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  opacity: 0.17px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+}
+
+.nav-btn:not(:last-child){
+  margin-right: 20px;
+}
+.nav-btn:hover{
+  transform: scale(1.2);
+}
+
+/* //////////////////////////////// */
+/* Tech CSS */
+
+.container-tech{
+  background: url('../pics/tech-desc.png') no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-left: 6%;
+  padding-top: 3%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.btns{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 80px;
+}
+.nav-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  box-sizing: border-box;
+  text-align: center;
+  mix-blend-mode: normal;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.nav-btn a{
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 2px;
+  
+  color: #fff;
+}
+
+
+
+.title-name{
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #D0D6F9;
+}
+
+.title-main{
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  
+  color: #FFFFFF;
+}
+
 
  @media only screen and (max-width: 900px){
 
@@ -372,7 +510,7 @@ nav ul li a:hover:after{
     justify-content: center;
   }
 
-  #line-main{
+  hr.line-main{
     display: none;
   }
 
