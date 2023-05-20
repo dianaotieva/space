@@ -1,0 +1,773 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bellefair', serif;
+}
+
+
+.container{
+  
+  background: url('../pics/desctopepic.jpg') no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-left: 6%;
+  padding-top: 3%;
+  box-sizing: border-box;
+  overflow: hidden;
+ 
+}
+
+.navbar{
+
+ position: relative;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 507px;
+ 
+}
+
+.navbar-mob{
+  display:none;
+}
+
+.logo{
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+hr.line-main{
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 473px;
+  left: 80px;
+  opacity: 0.17;
+  background: white;
+  
+}
+
+
+nav{ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 96px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+}
+
+nav ul {
+  display: flex;
+  gap: 37px;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+}
+
+nav ul li a:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: -10px;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 251px;
+  gap: 391px;
+
+}
+
+.texts{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.title1{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #D0D6F9;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+}
+
+.title2{
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 16px;
+  color: #FFFFFF;
+  font-size: 150px;
+  line-height: 172px;
+}
+
+.description{
+  text-align: justify;
+  max-width: 444px;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #D0D6F9;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.oval-button{
+  cursor: pointer;
+  width: 274px;
+  height: 274px;
+  border: none;
+  border-radius: 50%;
+
+}
+.oval-button a{
+
+  font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 23px;
+    cursor: pointer;
+    
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-decoration: none;
+    
+    color: #0B0D17;
+ }
+/* ////////////////////////////////////
+
+ */
+ /* Destination CSS */
+
+ .container-destination{
+  background: url('../pics/destinDesktop.jpg') no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-left: 6%;
+  padding-top: 3%;
+  box-sizing: border-box;
+  overflow: hidden;
+ }
+
+ .content-destination{
+  display: flex;
+  flex-direction: column;
+  margin-top: 74px;
+}
+
+.title h2{
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  padding-left: 75px;
+  color: #FFFFFF;
+}
+.content-after-title{
+  display: flex;
+  flex-direction: row;
+  padding-left: 64px;
+  gap: 157px;
+}
+
+ .moon-img{
+    margin-top: 32px;
+    width: 445px;
+    height: 445px;
+}
+
+
+ .slider-navigation {
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+
+ .slider-navigation ul  {
+  display: flex;
+  gap: 35px;
+ }
+
+
+ .slider-navigation ul li{
+  list-style: none;
+  display: inline-block;
+
+ }
+
+  .slider-navigation ul li a{
+    text-decoration: none;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+    cursor: pointer;
+ }
+
+ .slider-navigation ul li a:after{
+  float: right;
+  display: block;
+  color: rgb(6, 6, 6);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 4px;
+}
+
+.slider-navigation ul li a:hover{
+  border-bottom: 3px solid rgb(254, 252, 252);
+  transform-origin: bottom left;
+  margin-top: 10px;
+  
+}
+
+.texts-destination{
+  padding-left: 81px;
+}
+
+ .title-moon{
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  color: #FFFFFF;
+ }
+
+
+ .avg{
+  margin-top: 32px;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  color: #D0D6F9;
+ }
+  
+ .num{
+  margin-top: 12px;
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+ }
+
+ .travel-time{
+  margin-top: 32px;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  
+  color: #D0D6F9;
+ }
+
+.time-num{
+  margin-top: 12px;
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+ }
+
+ .bottom{
+  display: flex;
+  gap: 79px;
+ }
+
+ hr.bottomLine{
+  top: 363px;
+  width: 327px;
+  height: 1px;
+  opacity: 0.17px;
+ }
+/* ////////////////////////////////////////// */
+/* Crew CSS */
+
+.container-crew{
+  background: url('../pics/crewDesk.png') no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-left: 6%;
+  padding-top: 3%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+ .level{
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  
+  mix-blend-mode: normal;
+  opacity: 0.5;
+ }
+
+ .name{
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+ }
+ 
+ .image{
+  max-width: 568.07px;
+  max-height: 712px;
+ }
+
+ .crew-slider{
+  /* position: fixed; */
+  z-index: 888;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  transform: translateY(80px);
+  
+}
+
+ .crew-slider .nav-btn{
+  width: 15px;
+  height: 15px;
+  background: #9a9696;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+}
+
+.crew-slider .nav-btn:not(:last-child){
+  margin-right: 20px;
+}
+.crew-slider .nav-btn:hover{
+  transform: scale(1.2);
+  background-color: #fff;
+}
+
+/* //////////////////////////////// */
+/* Tech CSS */
+
+.container-tech{
+  background: url('../pics/tech-desc.png') no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-left: 6%;
+  padding-top: 3%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.btns{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 80px;
+}
+.btns .nav-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  box-sizing: border-box;
+  text-align: center;
+  mix-blend-mode: normal;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.btns .nav-btn a{
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 2px;
+  
+  color: #8a7f7f;
+}
+
+.btns .nav-btn:not(:last-child){
+  margin-right: 20px;
+}
+ .btns .nav-btn:hover{
+  transform: scale(1.2);
+  background-color: #fff;
+ }
+
+.title-name{
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #D0D6F9;
+}
+
+.title-main{
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  
+  color: #FFFFFF;
+}
+
+
+ @media only screen and (max-width: 900px){
+
+  .container{
+    background: url(../pics/indexTab.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  hr.line-main{
+    display: none;
+  }
+
+  .navbar-mob{
+    display: none;
+  }
+  .navbar{
+    gap: 231px;
+
+  }
+ nav ul li span{
+  display: none;
+ }
+
+ .content{
+  flex-direction: column;
+  margin-top: 106px;
+  gap: 156px;
+ }
+
+ .texts{
+  align-items: center;
+ }
+
+ .title1{
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 3.375px;
+ }
+ .title2{
+  line-height: 150px;
+ }
+
+ .description{
+  padding-right: 5%;
+  text-align: center;
+ }
+
+ .button{
+  justify-content: center;
+  align-items: center;
+ }
+
+ .oval-button{
+  width: 242px;
+  height: 242px;
+  margin-top: 10%
+ }
+
+ .oval-button a{
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
+ }
+
+ /* ////////////////////// */
+ /* Destination */
+ .container-destination{
+  background: url(../pics/crewtab.jpg) no-repeat;
+  padding-top: 0;
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: center;
+ }
+
+.content-destination{
+  margin-top: 40px;
+}
+
+.content-after-title{
+  flex-direction: column;
+  gap: 53px;
+  padding-left: 0;
+  
+}
+
+.title h2{
+  padding-left: 0;
+  font-size: 20px;
+  line-height: 24px;
+}
+.moon-img-container{
+  justify-content: center;
+  align-self: center;
+}
+.moon-img{
+  width: 300px;
+  height: 300px;
+}
+
+/* ////////////////// */
+/* Crew */
+.container-crew{
+  background: url(../pics/crewpic.png) no-repeat;
+  padding-top: 0;
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-after-title{
+  display: flex;
+ align-items: center;
+}
+.level{
+  text-align: center;
+}
+.crew-slider{
+ align-items: center;
+ justify-content: center;
+}
+.image-container .image{
+  padding-top: 40px;
+}
+
+
+ }
+
+ @media only screen and (max-width: 400px){
+
+  .container{
+    background: url('../pics/background.jpg') no-repeat;
+    background-size: 100% 100%;
+    /* padding-right: 4%; */
+    position: relative;
+    /* align-items: center;
+    justify-content: center; */
+  }
+ 
+  .content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 81px;
+
+    
+  }
+
+  .logo{
+    margin-left: 5px;
+  }
+
+  #line-main{
+    display: none;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  .navbar-mob{
+    display: block;
+     max-width: 327px;
+  }
+  
+  .sidenav {
+    backdrop-filter: blur(40.7742px);
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    gap:32px;
+    padding-top : 50%;
+    flex-direction: column;
+    align-items: center;
+    transition:  0.3s;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  .sidenav a {
+   
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: all 0.3s ease-out;
+  }
+  
+  .sidenav a:hover, a:focus {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+   .closebtn{
+      display: block;
+      position: absolute;
+      right: 27px;
+      top: 34px;
+  }
+  
+  .open{
+    color:#FFFFFF;
+    position: absolute;
+    top: 4%;
+    left:88%
+  }
+
+  .content{
+    margin-top: 48px;
+  }
+
+  .texts{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 327px;;
+    gap: 16px;
+  }
+
+  .title1{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.7px;
+
+  }
+
+  .title2{
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .description{
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .oval-button {
+
+    height: 150px;
+    width: 150px;
+  }
+
+  .oval-button a{
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+
+  }
+ 
+
+ }
+
+ 
