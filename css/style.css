@@ -116,7 +116,7 @@ nav ul li a:hover:after{
   align-content: center;
   margin-top: 251px;
   gap: 391px;
-
+  flex-wrap: wrap;
 }
 
 .texts{
@@ -402,14 +402,19 @@ nav ul li a:hover:after{
   max-height: 712px;
  }
 
+ .texts-crew{
+  padding-top: 80px;
+ }
+ .image-container-crew-mob{
+  display: none;
+ }
+ .crew-slider-mob{
+  display: none;
+ }
  .crew-slider{
-  /* position: sticky; */
   z-index: 888;
   display: flex;
-  justify-content: center;
-  align-items: center;
   transform: translateY(80px);
-  position: absolute;
 }
 
  .crew-slider .nav-btn{
@@ -484,6 +489,11 @@ nav ul li a:hover:after{
   background-color: #fff;
  }
 
+ .texts-tech{
+  padding-top: 80px;
+  padding-left: 80px;
+ }
+
 .title-name{
   font-family: 'Barlow Condensed';
   font-style: normal;
@@ -503,6 +513,12 @@ nav ul li a:hover:after{
   
   color: #FFFFFF;
 }
+
+.image-cont-tech-tab{
+  display: none
+}
+
+
 
 
  @media only screen and (max-width: 900px){
@@ -623,6 +639,75 @@ nav ul li a:hover:after{
 .level{
   text-align: center;
 }
+
+.crew-slider{
+  align-items: center;
+  justify-content: center;
+ }
+ .image-container .image{
+   padding-top: 40px;
+ }
+
+ /* ///////////////// */
+ /* Tech  */
+
+ .container-tech{
+  background: url(../pics/tech-tab.jpg) no-repeat;
+  padding-top: 0;
+  /* padding-left: 0; */
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+ }
+
+ .image-container-tech{
+  display: none;
+ }
+ .image-cont-tech-tab{
+  display: block;
+ }
+ .content-after-title{
+  padding-right: 6.5%;
+ }
+ .btns {
+  flex-direction: row;
+  padding-top: 57px;
+ }
+
+ .btns .nav-btn{
+  height: 60px;
+  width: 60px;
+ }
+ .btns .nav-btn a{
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+ .image-cont-tech-tab{
+  padding-top: 60px;
+ }
+
+ .texts-tech{
+  text-align: center;
+  justify-content: center;
+  padding-left: 0;
+  padding-top: 45px;
+ }
+
+.title-name{
+  align-self: center;
+
+}
+.title-main{
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.description{
+  font-size: 16px;
+  line-height: 28px;
+}
  }
 
  @media only screen and (max-width: 400px){
@@ -630,10 +715,7 @@ nav ul li a:hover:after{
   .container{
     background: url('../pics/background.jpg') no-repeat;
     background-size: 100% 100%;
-    /* padding-right: 4%; */
     position: relative;
-    /* align-items: center;
-    justify-content: center; */
   }
  
   .content{
@@ -718,7 +800,6 @@ nav ul li a:hover:after{
   }
 
   .texts{
-    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -757,7 +838,128 @@ nav ul li a:hover:after{
     letter-spacing: 1.25px;
 
   }
+
+  /* /////////////////////////// */
+  /* Destination */
+  .container-destination{
+    background: url('../pics/mob-dest.png') no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+  }
+
+  .title h2{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .title{
+    text-align: center;
+  }
+
+  .moon-img{
+    width: 170px;
+    height: 170px;
+  }
+
+  .slider-navigation ul li a{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  }
  
+  .title-moon{
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+
+  /* /////////////////////////////// */
+/* Crew */
+.container-crew{
+  background: url('../pics/crewpic.png') no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.level{
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.name{
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.crew-slider{
+  display: none;
+}
+
+.crew-slider-mob{
+  z-index: 888;
+  display: flex;
+  /* transform: translateY(80px); */
+  gap: 16px;
+}
+
+
+.crew-slider-mob .nav-btn{
+  width: 10px;
+  height: 10px;
+  background: #9a9696;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+}
+
+.image-container{
+  display: none;
+}
+
+.image-container-crew-mob{
+  display: block;
+  padding-top: 32px;
+  text-align: center;
+}
+.image-container-crew-mob .image{
+  width: 180.73px;
+  height: 222px;
+}
+
+.line{
+   margin-top:10p;
+  width: 327px;
+  height: 1px;
+  opacity: 0.17;
+  padding-top: 0;
+}
+
+.texts-crew{
+  padding-top: 32px;
+}
+.image-container-tech{
+  display: none;
+}
+.image-cont-tech-tab{
+  display: block;
+  
+}
+
+.image-cont-tech-tab image{
+  width: 374px;
+  height: 170px;
+}
+
+
 
  }
 
