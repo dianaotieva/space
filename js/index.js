@@ -108,8 +108,10 @@ document.getElementById('description')
 
 // Tech Javascript
 function techA() {
-  document.querySelector(".image")
-  .src="./pics/techDesk.jpg";
+  document.querySelector(".image-tech")
+  .src="/pics/techDesk.jpg";
+  document.querySelector(".image-tab")
+  .src="/pics/spaceTab1.jpg";
   document.querySelector(".title-main")
   .innerHTML="LAUNCH VEHICLE"
   document.querySelector(".description")
@@ -117,8 +119,10 @@ function techA() {
 }
 
 function techB() {
-  document.querySelector(".image")
-  .src="./pics/techimg2.jpg";
+  document.querySelector(".image-tech")
+  .src="/pics/techimg2.jpg";
+  document.querySelector(".image-tab")
+  .src="/pics/spaceTab2.jpg";
   document.querySelector(".title-main")
   .innerHTML="SPACEPORT"
   document.querySelector(".description")
@@ -126,8 +130,10 @@ function techB() {
 }
 
 function techC() {
-  document.querySelector(".image")
-  .src="./pics/techimg3.jpg";
+  document.querySelector(".image-tech")
+  .src="/pics/techimg3.jpg";
+  document.querySelector(".image-tab")
+  .src="/pics/spaceTab3.jpg";
   document.querySelector(".title-main")
   .innerHTML="SPACE CAPSULE"
   document.querySelector(".description")

@@ -16,8 +16,6 @@
   width: 100vw;
   min-width: 100vw;
   min-height: 100vh;
-  padding-left: 6%;
-  padding-top: 3%;
   box-sizing: border-box;
   overflow: hidden;
  
@@ -27,11 +25,12 @@
 
  position: relative;
  width: 100%;
+ padding-left: 55px;
  display: flex;
  align-items: center;
  justify-content: center;
  gap: 507px;
- 
+ padding-top: 40px;
 }
 
 .navbar-mob{
@@ -40,7 +39,7 @@
 
 .logo{
   cursor: pointer;
-  margin: 30px 0;
+  align-self: center;
 }
 
 hr.line-main{
@@ -48,9 +47,11 @@ hr.line-main{
   position: absolute;
   height: 1px;
   width: 473px;
-  left: 80px;
+  left: 150px;
+  z-index: 1;
   opacity: 0.17;
   background: white;
+  transform: translateZ(80px) ;
   
 }
 
@@ -62,8 +63,8 @@ nav{
   justify-content: center;
   width: 100%;
   height: 96px;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(40.7742px);
+  background: hsl(0 0% 100% /0.1);
+  backdrop-filter: blur(0.5rem);
 }
 
 nav ul {
@@ -107,6 +108,12 @@ nav ul li a:hover:after{
   transform-origin: bottom left;
 }
 
+nav ul li a span{
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
 
 
 .content{
@@ -123,6 +130,7 @@ nav ul li a:hover:after{
   position: relative;
   display: flex;
   flex-direction: column;
+  max-width: 444px;
   gap: 24px;
 }
 
@@ -174,17 +182,15 @@ nav ul li a:hover:after{
 .oval-button a{
 
   font-family: 'Bellefair';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 23px;
-    cursor: pointer;
-    
-    text-align: center;
-    letter-spacing: 1.25px;
-    text-decoration: none;
-    
-    color: #0B0D17;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 23px;
+  cursor: pointer;  
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-decoration: none;
+  color: #0B0D17;
  }
 /* ////////////////////////////////////
 
@@ -197,8 +203,6 @@ nav ul li a:hover:after{
   width: 100vw;
   min-width: 100vw;
   min-height: 100vh;
-  padding-left: 6%;
-  padding-top: 3%;
   box-sizing: border-box;
   overflow: hidden;
  }
@@ -209,6 +213,10 @@ nav ul li a:hover:after{
   margin-top: 74px;
 }
 
+.title{
+  margin-left: 4.7rem;
+}
+
 .title h2{
   font-family: 'Barlow Condensed';
   font-style: normal;
@@ -217,14 +225,16 @@ nav ul li a:hover:after{
   line-height: 34px;
   letter-spacing: 4.725px;
   text-transform: uppercase;
-  padding-left: 75px;
+  /* padding-left: 75px; */
   color: #FFFFFF;
 }
 .content-after-title{
   display: flex;
   flex-direction: row;
-  padding-left: 64px;
-  gap: 157px;
+  justify-content: center;
+
+  padding-top: 4rem;
+  gap: 200px;
 }
 
  .moon-img{
@@ -284,9 +294,6 @@ nav ul li a:hover:after{
   
 }
 
-.texts-destination{
-  padding-left: 81px;
-}
 
  .title-moon{
   font-family: 'Bellefair';
@@ -305,6 +312,7 @@ nav ul li a:hover:after{
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  text-align: center;
   letter-spacing: 2.3625px;
   color: #D0D6F9;
  }
@@ -327,6 +335,7 @@ nav ul li a:hover:after{
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  text-align: center;
   line-height: 17px;
   letter-spacing: 2.3625px;
   text-transform: uppercase;
@@ -341,11 +350,21 @@ nav ul li a:hover:after{
   font-weight: 400;
   font-size: 28px;
   line-height: 32px;
+  text-align: center;
   text-transform: uppercase;
   
   color: #FFFFFF;
  }
 
+ .description-dest{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: justify;
+  color: #D0D6F9;
+}
  .bottom{
   display: flex;
   gap: 79px;
@@ -366,10 +385,11 @@ nav ul li a:hover:after{
   width: 100vw;
   min-width: 100vw;
   min-height: 100vh;
-  padding-left: 6%;
-  padding-top: 3%;
   box-sizing: border-box;
   overflow: hidden;
+}
+.texts-crew{
+  padding-top: 0;
 }
 
  .level{
@@ -398,13 +418,11 @@ nav ul li a:hover:after{
  }
  
  .image{
+  padding-top: 4rem;
   max-width: 568.07px;
   max-height: 712px;
  }
 
- .texts-crew{
-  padding-top: 80px;
- }
  .image-container-crew-mob{
   display: none;
  }
@@ -444,16 +462,23 @@ nav ul li a:hover:after{
   width: 100vw;
   min-width: 100vw;
   min-height: 100vh;
-  padding-left: 6%;
-  padding-top: 3%;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+.content-after-title-tech{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 9rem; */
 }
 .btns{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 32px;
   padding-top: 80px;
+
 }
 .btns .nav-btn{
   display: flex;
@@ -481,9 +506,6 @@ nav ul li a:hover:after{
   color: #8a7f7f;
 }
 
-.btns .nav-btn:not(:last-child){
-  margin-right: 20px;
-}
  .btns .nav-btn:hover{
   transform: scale(1.2);
   background-color: #fff;
@@ -514,7 +536,11 @@ nav ul li a:hover:after{
   color: #FFFFFF;
 }
 
-.image-cont-tech-tab{
+.image-container-tech{
+  padding-left: 12rem;
+}
+
+.image-tech-tab{
   display: none
 }
 
@@ -526,7 +552,6 @@ nav ul li a:hover:after{
   .container{
     background: url(../pics/indexTab.jpg) no-repeat;
     background-size: 100% 100%;
-    padding-top: 0;
     align-items: center;
     justify-content: center;
   }
@@ -540,76 +565,74 @@ nav ul li a:hover:after{
   }
   .navbar{
     gap: 231px;
-
+    padding-top: 0;
+    padding-left: 30px;
   }
- nav ul li span{
-  display: none;
- }
+   nav ul li span{
+    display: none;
+  }
+
 
  .content{
-  flex-direction: column;
-  margin-top: 106px;
-  gap: 156px;
+    flex-direction: column;
+    margin-top: 106px;
+    gap: 156px;
  }
 
  .texts{
-  align-items: center;
+    align-items: center;
  }
 
  .title1{
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 3.375px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
  }
  .title2{
-  line-height: 150px;
+    line-height: 150px;
  }
 
  .description{
-  padding-right: 5%;
-  text-align: center;
- }
+    padding-right: 5%;
+    text-align: center;
+    font-size: 16px;
+   }
 
  .button{
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
  }
 
  .oval-button{
-  width: 242px;
-  height: 242px;
-  margin-top: 10%
+    width: 242px;
+    height: 242px;
+    margin-top: 10%
  }
 
  .oval-button a{
-  font-size: 32px;
-  line-height: 37px;
-  letter-spacing: 2px;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
  }
 
  /* ////////////////////// */
  /* Destination */
  .container-destination{
-  background: url(../pics/crewtab.jpg) no-repeat;
-  padding-top: 0;
-  background-size: 100% 100%;
-  align-items: center;
-  justify-content: center;
+    background: url(../pics/crewtab.jpg) no-repeat;
+    background-size: 100% 100%;
+    align-items: center;
+    justify-content: center;
  }
 
 .content-destination{
-  margin-top: 40px;
+   margin-top: 40px;
 }
 
-.content-after-title{
-  flex-direction: column;
-  gap: 53px;
-  padding-left: 0;
-  
+.title{
+  margin-left: 2rem;
 }
 
 .title h2{
-  padding-left: 0;
   font-size: 20px;
   line-height: 24px;
 }
@@ -622,11 +645,29 @@ nav ul li a:hover:after{
   height: 300px;
 }
 
+.texts{
+  max-width: 573px;
+}
+.title-moon{
+  font-size: 80px;
+  line-height: 92px;
+}
+
+.description-dest{
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+
+hr.bottomLine{
+  width: 573px;
+}
+
 /* ////////////////// */
 /* Crew */
 .container-crew{
   background: url(../pics/crewpic.png) no-repeat;
-  padding-top: 0;
   background-size: 100% 100%;
   align-items: center;
   justify-content: center;
@@ -634,41 +675,59 @@ nav ul li a:hover:after{
 
 .content-after-title{
   display: flex;
- align-items: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 53px;
+  padding-right: 6.5%;
+}
+
+.texts-crew{
+  text-align: center;
 }
 .level{
   text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.name{
+  font-size: 40px;
+  line-height: 45px;
 }
 
 .crew-slider{
   align-items: center;
   justify-content: center;
  }
- .image-container .image{
-   padding-top: 40px;
- }
+
+
 
  /* ///////////////// */
  /* Tech  */
 
  .container-tech{
   background: url(../pics/tech-tab.jpg) no-repeat;
-  padding-top: 0;
-  /* padding-left: 0; */
   background-size: 100% 100%;
   align-items: center;
   justify-content: center;
   position: relative;
  }
 
+ .content-after-title-tech{
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+ }
+
+
+
  .image-container-tech{
   display: none;
  }
- .image-cont-tech-tab{
+ .image-tech-tab{
   display: block;
- }
- .content-after-title{
-  padding-right: 6.5%;
+  padding-left: 0;
+  padding-top: 60px;
  }
  .btns {
   flex-direction: row;
@@ -683,10 +742,6 @@ nav ul li a:hover:after{
     font-size: 24px;
     line-height: 28px;
   }
-
- .image-cont-tech-tab{
-  padding-top: 60px;
- }
 
  .texts-tech{
   text-align: center;
@@ -712,6 +767,7 @@ nav ul li a:hover:after{
 
  @media only screen and (max-width: 400px){
 
+
   .container{
     background: url('../pics/background.jpg') no-repeat;
     background-size: 100% 100%;
@@ -727,9 +783,7 @@ nav ul li a:hover:after{
     
   }
 
-  .logo{
-    margin-left: 5px;
-  }
+ 
 
   #line-main{
     display: none;
@@ -741,7 +795,9 @@ nav ul li a:hover:after{
 
   .navbar-mob{
     display: block;
-     max-width: 327px;
+    max-width: 327px;
+    padding: 24px 24px;
+    
   }
   
   .sidenav {
@@ -758,7 +814,7 @@ nav ul li a:hover:after{
     right: 0;
     width: 0;
     height: 100vh;
-    z-index: 1;
+    z-index: 888;
   }
 
   .sidenav a {
@@ -791,7 +847,7 @@ nav ul li a:hover:after{
   .open{
     color:#FFFFFF;
     position: absolute;
-    top: 4%;
+    /* top: 4%; */
     left:88%
   }
 
@@ -803,7 +859,7 @@ nav ul li a:hover:after{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 327px;;
+    max-width: 327px;;
     gap: 16px;
   }
 
@@ -857,6 +913,9 @@ nav ul li a:hover:after{
     text-align: center;
   }
 
+  .content-after-title{
+    padding: 0;
+  }
   .moon-img{
     width: 170px;
     height: 170px;
@@ -867,6 +926,7 @@ nav ul li a:hover:after{
     line-height: 17px;
     letter-spacing: 2.3625px;
   }
+  
  
   .title-moon{
     font-size: 56px;
@@ -880,6 +940,9 @@ nav ul li a:hover:after{
     text-align: center;
   }
 
+  hr.bottomLine{
+    max-width: 327px;
+  }
   /* /////////////////////////////// */
 /* Crew */
 .container-crew{
@@ -899,6 +962,9 @@ nav ul li a:hover:after{
   text-align: center;
 }
 
+.texts-crew{
+  max-width: 327px;
+}
 .crew-slider{
   display: none;
 }
@@ -906,6 +972,7 @@ nav ul li a:hover:after{
 .crew-slider-mob{
   z-index: 888;
   display: flex;
+  overflow: hidden;
   /* transform: translateY(80px); */
   gap: 16px;
 }
@@ -935,31 +1002,54 @@ nav ul li a:hover:after{
   height: 222px;
 }
 
-.line{
-   margin-top:10p;
+hr.line{
   width: 327px;
   height: 1px;
   opacity: 0.17;
-  padding-top: 0;
+  z-index: -1;
 }
 
-.texts-crew{
-  padding-top: 32px;
+
+.btns {
+  gap: 16px;
+  padding-top: 34px;
+}
+
+.btns .nav-btn{
+  height: 40px;
+  width: 40px;
+}
+
+.btns .nav-btn a{
+  font-size: 16px;
+  line-height: 18px;
+}
+.texts-tech{
+  padding-top: 26px;
+  padding-left: 2%;
+  max-width: 327px;
 }
 .image-container-tech{
   display: none;
 }
-.image-cont-tech-tab{
-  display: block;
-  
+
+.image-tech-tab{
+  padding-top: 32px;
 }
 
-.image-cont-tech-tab image{
-  width: 374px;
+.image-tech-tab .image-tab{
+  width: 100%;
   height: 170px;
+
 }
-
-
+.title-name{
+  font-size: 14px;
+  line-height: 16px;
+}
+.title-main{
+  font-size: 24px;
+  line-height: 27px;
+}
 
  }
 
