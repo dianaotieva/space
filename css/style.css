@@ -471,7 +471,7 @@ nav ul li a span{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding-left: 9rem; */
+  padding-left: 4rem;
 }
 .btns{
   display: flex;
@@ -479,6 +479,7 @@ nav ul li a span{
   align-items: center;
   gap: 32px;
   padding-top: 80px;
+
 
 }
 .btns .nav-btn{
@@ -538,7 +539,7 @@ nav ul li a span{
 }
 
 .image-container-tech{
-  padding-left: 150px;
+  padding-left: 250px;
 }
 
 .image-tech-tab{
@@ -635,6 +636,7 @@ nav ul li a span{
   margin-left: 2rem;
 }
 
+
 .title h2{
   font-size: 20px;
   line-height: 24px;
@@ -676,7 +678,7 @@ hr.bottomLine{
   justify-content: center;
 }
 
-.content-after-title{
+tent-after-title{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -728,6 +730,7 @@ hr.bottomLine{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 0;
  }
  .btns {
   flex-direction: row;
@@ -995,6 +998,9 @@ hr.bottomLine{
   display: none;
 }
 
+.content-after-title-tech{
+  padding-left: 0;
+}
 .image-container-crew-mob{
   display: block;
   padding-top: 32px;
