@@ -64,6 +64,8 @@ function Titan() {
 function crewA(){
   document.getElementById('image')
   .src="./pics/image-tab.png";
+  document.getElementById('image-tab')
+  .src="./pics/image-tab.png";
   document.getElementById('level')
   .innerHTML="Commander";
   document.getElementById('name')
@@ -75,6 +77,8 @@ function crewA(){
 function crewB(){
 document.getElementById('image')
 .src="./pics/mark-tab.png";
+document.getElementById('image-tab')
+  .src="./pics/mark-tab.png";
 document.getElementById('level')
 .innerHTML="Mission Specialist";
 document.getElementById('name')
@@ -87,6 +91,8 @@ console.log("its working");
 function crewC(){
 document.getElementById('image')
 .src="./pics/victor-tab.png";
+document.getElementById('image-tab')
+.src="./pics/victor-tab.png";
 document.getElementById('level')
 .innerHTML="Pilot";
 document.getElementById('name')
@@ -97,6 +103,8 @@ document.getElementById('description')
 
 function crewD(){
 document.getElementById('image')
+.src="./pics/anoushan-tab.png";
+document.getElementById('image-tab')
 .src="./pics/anoushan-tab.png";
 document.getElementById('level')
 .innerHTML="Flight Engineer";

@@ -389,7 +389,8 @@ nav ul li a span{
   overflow: hidden;
 }
 .texts-crew{
-  padding-top: 0;
+  padding-top: 124px;
+
 }
 
  .level{
@@ -537,7 +538,7 @@ nav ul li a span{
 }
 
 .image-container-tech{
-  padding-left: 12rem;
+  padding-left: 150px;
 }
 
 .image-tech-tab{
@@ -718,11 +719,15 @@ hr.bottomLine{
  .image-container-tech{
   display: none;
  }
- .image-cont-tech-tab{
+ .image-tech-tab{
   display: block;
+  padding-top: 60px;
  }
- .content-after-title{
-  padding-right: 6.5%;
+ .content-after-title-tech{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
  }
  .btns {
   flex-direction: row;
@@ -738,10 +743,6 @@ hr.bottomLine{
     font-size: 24px;
     line-height: 28px;
   }
-
- .image-cont-tech-tab{
-  padding-top: 60px;
- }
 
  .texts-tech{
   text-align: center;
@@ -965,6 +966,7 @@ hr.bottomLine{
 
 .texts-crew{
   max-width: 327px;
+  padding-top: 32px;
 }
 .crew-slider{
   display: none;
