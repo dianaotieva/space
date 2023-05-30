@@ -214,7 +214,7 @@ nav ul li a span{
 }
 
 .title{
-  margin-left: 4.7rem;
+  margin-left: 9.5rem;
 }
 
 .title h2{
@@ -228,11 +228,11 @@ nav ul li a span{
   /* padding-left: 75px; */
   color: #FFFFFF;
 }
-.content-after-title{
+.content-after-title-destination{
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+  align-items: center;
   padding-top: 4rem;
   gap: 200px;
 }
@@ -388,11 +388,16 @@ nav ul li a span{
   box-sizing: border-box;
   overflow: hidden;
 }
+.content-after-title-crew{
+  display: flex
+}
 .texts-crew{
   padding-top: 124px;
 
 }
-
+hr.line{
+  display: none;
+}
  .level{
   font-family: 'Bellefair';
   font-style: normal;
@@ -471,7 +476,7 @@ nav ul li a span{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 4rem;
+  padding-left: 9.5rem;
 }
 .btns{
   display: flex;
@@ -556,8 +561,6 @@ nav ul li a span{
   .container{
     background: url(../pics/indexTab.jpg) no-repeat;
     background-size: 100% 100%;
-    align-items: center;
-    justify-content: center;
   }
 
   hr.line-main{
@@ -641,6 +644,12 @@ nav ul li a span{
   font-size: 20px;
   line-height: 24px;
 }
+
+.content-after-title-destination{
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
 .moon-img-container{
   justify-content: center;
   align-self: center;
@@ -678,16 +687,17 @@ hr.bottomLine{
   justify-content: center;
 }
 
-tent-after-title{
+.content-after-title-crew{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 53px;
-  padding-right: 6.5%;
+  /* padding-right: 6.5%; */
 }
 
 .texts-crew{
   text-align: center;
+  padding-top: 60px;
 }
 .level{
   text-align: center;
@@ -918,8 +928,8 @@ tent-after-title{
     text-align: center;
   }
 
-  .content-after-title{
-    padding: 0;
+  .content-after-title-destination{
+    padding-top: 0;
   }
   .moon-img{
     width: 170px;
@@ -956,6 +966,10 @@ tent-after-title{
   position: relative;
 }
 
+#image-tab{
+  padding-top: 10px;
+}
+
 .level{
   font-size: 16px;
   line-height: 18px;
@@ -975,11 +989,11 @@ tent-after-title{
   display: none;
 }
 
+
 .crew-slider-mob{
   z-index: 888;
   display: flex;
   overflow: hidden;
-  /* transform: translateY(80px); */
   gap: 16px;
 }
 
@@ -1009,13 +1023,13 @@ tent-after-title{
 .image-container-crew-mob .image{
   width: 180.73px;
   height: 222px;
+
 }
 
 hr.line{
   width: 327px;
   height: 1px;
   opacity: 0.17;
-  z-index: -1;
 }
 
 
