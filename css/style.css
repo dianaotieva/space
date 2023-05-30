@@ -404,9 +404,7 @@ hr.line{
   font-size: 32px;
   line-height: 37px;
   text-transform: uppercase;
-  
   color: #FFFFFF;
-  
   mix-blend-mode: normal;
   opacity: 0.5;
  }
@@ -805,6 +803,7 @@ hr.bottomLine{
     display: none;
   }
 
+
   .navbar{
     display: none;
   }
@@ -968,9 +967,8 @@ hr.bottomLine{
   position: relative;
 }
 
-#image-tab{
-  padding-top: 10px;
-}
+
+
 
 .level{
   font-size: 16px;
@@ -985,7 +983,7 @@ hr.bottomLine{
 
 .texts-crew{
   max-width: 327px;
-  padding-top: 32px;
+  padding-top: 22px;
 }
 .crew-slider{
   display: none;
@@ -1023,12 +1021,16 @@ hr.bottomLine{
   text-align: center;
 }
 .image-container-crew-mob .image{
-  width: 180.73px;
+  width: 200px;
   height: 222px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
 
 }
 
 hr.line{
+  display: block;
   width: 327px;
   height: 1px;
   opacity: 0.17;
@@ -1037,7 +1039,7 @@ hr.line{
 
 .btns {
   gap: 16px;
-  padding-top: 34px;
+  padding-top: 32px;
 }
 
 .btns .nav-btn{
