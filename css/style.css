@@ -47,7 +47,7 @@ hr.line-main{
   position: absolute;
   height: 1px;
   width: 473px;
-  left: 150px;
+  left: 157px;
   z-index: 1;
   opacity: 0.17;
   background: white;
@@ -118,12 +118,11 @@ nav ul li a span{
 
 .content{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
+  /* justify-content: space-around; */
   margin-top: 251px;
-  gap: 391px;
   flex-wrap: wrap;
+  margin-left: 165px;
+  gap: 391px;
 }
 
 .texts{
@@ -582,8 +581,10 @@ hr.line{
 
  .content{
     flex-direction: column;
+    margin-left: 72px;
     margin-top: 106px;
     gap: 156px;
+    
  }
 
  .texts{
@@ -608,12 +609,14 @@ hr.line{
  .button{
     justify-content: center;
     align-items: center;
+    /* padding-left: 0%; */
  }
 
  .oval-button{
+  /* align-self: center; */
     width: 242px;
     height: 242px;
-    margin-top: 10%
+    margin-top: 10%;
  }
 
  .oval-button a{
@@ -793,8 +796,7 @@ hr.bottomLine{
     align-items: center;
     justify-content: center;
     gap: 81px;
-
-    
+    margin-left: 0;
   }
 
  
